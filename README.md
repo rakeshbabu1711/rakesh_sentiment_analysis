@@ -19,7 +19,7 @@ In order to do this, you planned to build a sentiment-based product recommendati
 
 ### Solution
 
-* github link: https://github.com/rakeshbabu1711/rakesh_sentiment_analsyis
+* github link: https://github.com/rakeshbabu1711/rakesh_sentiment_analysis_capstone
 
 * Heroku (Application is Live): https://rakeshsentiment-capstone-sbprs.herokuapp.com/
 
@@ -42,7 +42,7 @@ In order to do this, you planned to build a sentiment-based product recommendati
 * During EDA, it is observed that the Dataset suffers from Class Imbalance Issue which is handled using SMOTE Oversampling technique before applying the model
 * Machine Learning Classification Models (Logistic Regression, Naive Bayes, Tree Algorithms : (Decision Tree, Random Forest, XGBoost) are applied on the vectorized data and the target column (user_sentiment). the objective of this ML model is to classify the sentiment to positive(1) or negative(0). Best Model is selected based on the various ML classification metrics (Accuracy, Precision, Recall, F1 Score, AUC). XGBoost is selected to be a better model based on the evaluation metrics.
 *  Collaborative Filtering Recommender system is created based on User-user and item-item approaches. RMSE evaluation metric is used for the evaluation.
-*  \Sentiment_analysis_rakesh.ipynb Jupyter notebook contains the code for Sentiment Classification and Recommender Systems
+*  Sentiment_analysis_rakesh.ipynb Jupyter notebook contains the code for Sentiment Classification and Recommender Systems
 *  Top 20 products are filtered using the better recommender system, and for each of the products predicted the user_sentiment for all the reviews and filtered out the Top 5 products that have higher Postive User Sentiment (model.py)
 *  Machine Learning models are saved in the pickle files(under the folder pickle\); Flask API (app.py) is used to interface and test the Machine Learning models. Bootstrap and Flask jinja templates (templates\index.html) are used for setting up the User interface.
 *  End to End application is deployed in Heroku
